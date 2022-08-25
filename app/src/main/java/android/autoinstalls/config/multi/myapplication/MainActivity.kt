@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.view.isVisible
 import org.w3c.dom.Text
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         btStart.setOnClickListener(){
             if(helloWorld.visibility == TextView.INVISIBLE){
                 helloWorld.visibility = TextView.VISIBLE
+                Toast.makeText(applicationContext, "Hello world", Toast.LENGTH_SHORT).show()
             }else{
                 helloWorld.visibility = TextView.INVISIBLE
             }
